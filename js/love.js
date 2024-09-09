@@ -169,14 +169,14 @@
             ctx.moveTo(0, 0);
             ctx.scale(0.75, 0.75);
             ctx.font = "12px 微软雅黑,Verdana"; // 字号肿么没有用? (ˉ(∞)ˉ)
-            ctx.fillText("小寒同学，请点一下♥喔！", 23, 16);
+            ctx.fillText("小寒同学点一下♥喔", 23, 16);
             ctx.restore();
         },
         clear: function() {
             var ctx = this.tree.ctx, cirle = this.cirle;
             var point = cirle.point, scale = cirle.scale, radius = 26;
             var w = h = (radius * scale);
-            ctx.clearRect(point.x - w, point.y - h, 4 * w + 200, 4 * h + 100);
+            ctx.clearRect(point.x - w, point.y - h, 4 * w + 200, 4 * h + 200);
         },
         hover: function(x, y) {
             var ctx = this.tree.ctx;
