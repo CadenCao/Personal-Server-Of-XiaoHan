@@ -176,7 +176,7 @@
             var ctx = this.tree.ctx, cirle = this.cirle;
             var point = cirle.point, scale = cirle.scale, radius = 26;
             var w = h = (radius * scale);
-            ctx.clearRect(point.x - w, point.y - h, 4 * w+100, 4 * h+100);
+            ctx.clearRect(point.x - w, point.y - h, 4 * w + 200, 4 * h + 100);
         },
         hover: function(x, y) {
             var ctx = this.tree.ctx;
